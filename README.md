@@ -10,7 +10,6 @@ The pipeline is built to run at high throughput. A graph neural network trained 
 
 The approach is simple and modular and can be adapted to other receptor–ligand systems, including antibody–antigen interactions. Please do!
 
-Pipeline Workflow
 
 ## <h1 align="center">Pipeline Workflow </h1>
 
