@@ -21,13 +21,13 @@ flowchart TB
 
     A[" 
     Receptor Prediction
-    ----------------------------------------
+
     Predict Receptor Structure with OpenFold3
     "]
 
     B[" 
     Identify Receptor:Ligand Interface 
-    ----------------------------------------
+
     PyTorch, GCN
     align.py/model.py/find_RBS.py
     interface_gcn_mapped.pth
@@ -35,14 +35,14 @@ flowchart TB
 
     C[" 
     Binding pocket optimization
-    ----------------------------------------
+
     Side-Chain Optimization of Flexible Residues using pocket_relax
     rosetta.py/prepare_pocket.py
     "]
 
     D[" 
     Bounding Box Generation
-    ----------------------------------------
+
     Bounding Box Generation, Flexible Residue Selection for docking
     prepare_receptor.py
     score.sc
@@ -50,14 +50,14 @@ flowchart TB
 
     E[" 
     Vina/Smina Ligand Docking
-    ----------------------------------------
+
     Vina/Smina Docking
     vina.py
     "]
 
     F[" 
     ML Pose Filter
-    ----------------------------------------
+
     Ligand vectorization, ML and GCN filter
     geometry_classifier.py/geometry.py
     per_residue_probs.txt
@@ -66,7 +66,7 @@ flowchart TB
 
     G[" 
     Pose Ranking and Results
-    ----------------------------------------
+
     Scoring, Pose Ranking, ΔΔG calculation
     score.py
     "]
